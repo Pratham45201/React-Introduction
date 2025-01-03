@@ -1,3 +1,3 @@
 # React-Introduction
 
-Project created during frontend masters Introduct to react course.
+Project created during frontend masters Introduction to react v9 course.
