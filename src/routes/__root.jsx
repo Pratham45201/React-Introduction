@@ -14,7 +14,7 @@ export const Route = createRootRoute({
         <CartContext.Provider value={cartHook}>
           <div>
             <Header />
-            <Outlet />
+            <Outlet /> {/* This is where child routes will render */} 
             <PizzaOfTheDay />
           </div>
         </CartContext.Provider>

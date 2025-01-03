@@ -6,6 +6,10 @@ export const Route = createLazyFileRoute("/contact")({
   component: ContactRoute,
 });
 
+/**
+ * Mutations are used to perform server-side effects in TanStack's react-query.
+ * As we are sending user's data to the server here we are using mutations.
+ */
 function ContactRoute() {
   const mutation = useMutation({
     mutationFn: function (e) {
@@ -19,12 +23,12 @@ function ContactRoute() {
     },
   });
 
-  if(mutation.isError){
+  if (mutation.isError) {
     return (
-        <div>
-            <h1>Error...</h1>
-        </div>
-    )
+      <div>
+        <h1>Error...</h1>
+      </div>
+    );
   }
 
   return (
